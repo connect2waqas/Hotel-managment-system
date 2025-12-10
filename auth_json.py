@@ -65,21 +65,35 @@ def processing():
 
 import os
 
+def fetch_data():
+    file_path = "user_data.json"
+
+    if not os.path.exists(file_path):
+        return []
+    try:
+        with open(file_path,"r") as f:
+            data = json.load(f)
+        if isinstance(data,dict):
+            data = [data]
+        return data
+    except json.JSONDecodeError:
+        return []
+
 def save_user_data():
-    # Take user input
     full_name = input("Enter your name: ").strip()
+    occupation = input("Enter your occupation: ").strip()
     while True:
         try:
-            ID = int(input("Enter your ID: "))
             age = int(input("Enter age: "))
+            ID = int(input("Enter your ID: "))
+            users = fetch_data()
+            for user in users:
+                if user["ID"] == ID:
+                    print("User Already Present!")
+                    break
             break
         except ValueError:
             print("Pleas enter a Valid number")
-
-    # ID = int(input("Enter your ID: "))
-    # age = int(input("Enter age: "))
-    occupation = input("Enter your occupation: ").strip()
-
     new_entry = {
         "full_name": full_name,
         "ID": ID,
