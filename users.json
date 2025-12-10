@@ -1,0 +1,12 @@
+{
+  "waqas khan": {
+    "salt": "C8R563y2WVDnDKpMZ8Me+w==",
+    "hash": "QtPB4guntjy57xcBGpRHtzRW5ml2FkTJ+K5XA4yY0Ak=",
+    "iterations": 150000
+  },
+  "waqaskhan": {
+    "salt": "4F0H4FuVgpLytipBLJO0vQ==",
+    "hash": "4l/mctOgV1p+6IsmZzn3kazTiFFPL4tWFMJyN0j9BcE=",
+    "iterations": 150000
+  }
+}
