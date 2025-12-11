@@ -32,7 +32,7 @@ def main():
 
 
         elif cmd == "exit":
-            print("Goodbye!")
+            print("Thank You!")
             
             break
 

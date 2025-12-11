@@ -28,6 +28,7 @@ def show_dashboard(username):
         elif choice == "1":
             print("Room booking module opened...")
             print(Greet_To_room())
+            print(auth_json.save_user_data()) 
             total_bill = DeliverRoom()
             current  = Pyments()
             current += total_bill
