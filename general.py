@@ -37,7 +37,9 @@ def show_dashboard(username):
                 print("Email recived! ")
                 delete_data = input("Did you want to delete your data: ").lower()
                 if delete_data == "yes":
-                    
+                    customer_managment.delete_customer_data()
+                else:
+                    print("Thank You")
             else:
                 print("Something went wrong!")
             return current
