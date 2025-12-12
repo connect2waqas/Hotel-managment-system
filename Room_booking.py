@@ -1,6 +1,3 @@
-# import main
-# from pyments import Pyments
-
 def Greet_To_room():
     return f"Welcome to Room Booking:"
 # def check_room_aviable():
@@ -31,7 +28,7 @@ def Room_selection():
     
 def DeliverRoom():
     rooms = Room_info()
-    choice = Room_selection() - 1      # Convert 1-4 to 0-3 index
+    choice = Room_selection() - 1      
     selected_room = rooms[choice]
 
     print(selected_room)

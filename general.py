@@ -1,7 +1,6 @@
 from Room_booking import  DeliverRoom , Greet_To_room, Room_confirmation
-# from Check_in import Customer_infomation 
 from pyments import Pyments
-import auth_json # import save_user_data , processing
+import customer_managment
 def show_dashboard(username):
     print(f"\nWelcome, {username}! You are logged in.")
 
@@ -28,7 +27,7 @@ def show_dashboard(username):
         elif choice == "1":
             print("Room booking module opened...")
             print(Greet_To_room())
-            print(auth_json.save_user_data()) 
+            print(customer_managment.save_user_data()) 
             total_bill = DeliverRoom()
             current  = Pyments()
             current += total_bill
@@ -42,13 +41,13 @@ def show_dashboard(username):
         
         elif choice == "2":
             print("Check-in module opened...")
-            print(auth_json.processing())
-            userData = auth_json.save_user_data()
-            
+            print(customer_managment.processing())
+            userData = customer_managment.save_user_data()
+            print(userData)
 
+        # elif choice == 3:
 
-
-        # add more later…
+        # add more later…\\\
 
         else:
             print("Invalid option. Try again.")
