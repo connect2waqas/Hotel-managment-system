@@ -71,7 +71,8 @@ def save_user_data():
 
 def delete_customer_data():
     data = fetch_data()
-    data = [item for item in data if item.get("name") != "Waqas"]
+    name = input("Enter your name: ")
+    data = [item for item in data if item.get("name") != name]
 
     with open("user_data.json", "w") as f:
         json.dump(data, f, indent=4)

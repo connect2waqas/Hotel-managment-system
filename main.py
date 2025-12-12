@@ -1,5 +1,5 @@
 import auth_json
-import general
+import Menu
 import greet
 number_Of_register_user = 0
 
@@ -26,7 +26,7 @@ def main():
             number_Of_register_user +=1
             
             if ok:
-                general.show_dashboard(u)  # <-- CALL GENERAL.PY
+                Menu.show_dashboard(u)  # <-- CALL GENERAL.PY
         elif cmd == "exit":
             print("Thank You sir")
             
