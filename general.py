@@ -35,6 +35,9 @@ def show_dashboard(username):
                 print(Room_confirmation())
                 print(f"You have Pay {current}")
                 print("Email recived! ")
+                delete_data = input("Did you want to delete your data: ").lower()
+                if delete_data == "yes":
+                    
             else:
                 print("Something went wrong!")
             return current
@@ -43,7 +46,7 @@ def show_dashboard(username):
             print("Check-in module opened...")
             print(customer_managment.processing())
             userData = customer_managment.save_user_data()
-            print(userData)
+            
 
         # elif choice == 3:
 
