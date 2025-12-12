@@ -40,10 +40,11 @@ def show_dashboard(username):
                     customer_managment.delete_customer_data()
                 else:
                     print("Thank You")
+
             else:
                 print("Something went wrong!")
             return current
-        
+
         elif choice == "2":
             print("Check-in module opened...")
             print(customer_managment.processing())

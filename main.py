@@ -15,9 +15,7 @@ def main():
             ok, msg = auth_json.register(u, p)
             print(msg)
             global number_Of_register_user 
-            number_Of_register_user +=1
-            
-            
+            number_Of_register_user +=1 
         elif cmd == "login":
             u = input("Enter username: ")
             p = input("Enter password: ")
@@ -29,8 +27,6 @@ def main():
             
             if ok:
                 general.show_dashboard(u)  # <-- CALL GENERAL.PY
-
-
         elif cmd == "exit":
             print("Thank You sir")
             
