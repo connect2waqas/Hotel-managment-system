@@ -4,9 +4,6 @@ import os
 def processing():
     return f"Processing..."
 
-import json
-import os
-
 def fetch_data():
     file_path = "user_data.json"
 
@@ -61,7 +58,7 @@ def save_user_data():
     with open("user_data.json", "w") as f:
         json.dump(users, f, indent=4)
 
-    return users
+    return 
 
 def delete_customer_data():
     users = fetch_data()
@@ -75,3 +72,15 @@ def delete_customer_data():
         with open("user_data.json", "w") as f:
             json.dump(updated_users, f, indent=4)
         print("✅ User deleted successfully.")
+
+def search_customer():
+    ID = int(input("Enter ID of customer: "))
+    users = fetch_data()
+    customer_found = False
+    for user in users:
+        if user["ID"] == ID:
+            print(user["ID"],user["full_name"],user["age"],user["occupation"])
+            customer_found = True
+            break
+    if not customer_found:
+        print("ID Not found")

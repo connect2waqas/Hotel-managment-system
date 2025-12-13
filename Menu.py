@@ -1,6 +1,6 @@
 from Room_booking import  Greet_To_room, Room_confirmation
-import pyments 
-import customer_managment
+import payments
+import customer_management
 def show_dashboard(username):
     print(f"\nWelcome, {username}! You are logged in.")
 
@@ -27,9 +27,9 @@ def show_dashboard(username):
         elif choice == "1":
             print("Room booking module opened...")
             print(Greet_To_room())
-            print(customer_managment.save_user_data()) 
+            print(customer_management.save_user_data()) 
             total_bill = 0
-            current  = pyments.final_bill()
+            current  = payments.final_bill()
             current += total_bill
             if current >= 5000:
                 print(Room_confirmation())
@@ -37,7 +37,7 @@ def show_dashboard(username):
                 print("Email recived! ")
                 delete_data = input("Did you want to delete your data: ").lower()
                 if delete_data == "yes":
-                    customer_managment.delete_customer_data()
+                    customer_management.delete_customer_data()
                 else:
                     print("Thank You")
 
@@ -47,12 +47,10 @@ def show_dashboard(username):
         
         elif choice == "2":
             print("Check-in module opened...")
-            print(customer_managment.processing())
-            userData = customer_managment.save_user_data()
-            
+            print(customer_management.processing())
+            userData = customer_management.save_user_data()
             print("Profile Update Successfully...")
 
-            
 
         # elif choice == 3:
 

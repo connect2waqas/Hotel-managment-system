@@ -1,11 +1,5 @@
 [
     {
-        "Full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI Engineer"
-    },
-    {
         "full_name": "waqaskhan",
         "ID": 252,
         "age": 23,
@@ -13,56 +7,8 @@
     },
     {
         "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "Ai Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
         "ID": 23,
         "age": 233,
-        "occupation": "Ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "Ai Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "Ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "AI Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "Ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
         "occupation": "Ai engineer"
     },
     {
@@ -79,62 +25,8 @@
     },
     {
         "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 444,
-        "occupation": "24"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "AI Engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
         "ID": 44,
         "age": 24,
         "occupation": "AI engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 23,
-        "occupation": "Ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI engineering"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "Ai engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI engineer"
-    },
-    {
-        "full_name": "waqaskhan",
-        "ID": 444,
-        "age": 24,
-        "occupation": "AI Engineer"
     }
 ]
