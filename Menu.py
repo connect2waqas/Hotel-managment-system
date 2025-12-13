@@ -1,5 +1,5 @@
-from Room_booking import  DeliverRoom , Greet_To_room, Room_confirmation
-from pyments import Pyments
+from Room_booking import  Greet_To_room, Room_confirmation
+import pyments 
 import customer_managment
 def show_dashboard(username):
     print(f"\nWelcome, {username}! You are logged in.")
@@ -28,8 +28,8 @@ def show_dashboard(username):
             print("Room booking module opened...")
             print(Greet_To_room())
             print(customer_managment.save_user_data()) 
-            total_bill = DeliverRoom()
-            current  = Pyments()
+            total_bill = 0
+            current  = pyments.final_bill()
             current += total_bill
             if current >= 5000:
                 print(Room_confirmation())

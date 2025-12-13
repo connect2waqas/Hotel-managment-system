@@ -1,3 +1,4 @@
+import csv
 import Room_booking
 def Pyments():
     pyments = 0
@@ -18,5 +19,10 @@ def Extra_services():
     other_misc = 1000
     return other_misc + discount()
 
-def finall_bill():
-    return Extra_services()
+def final_bill():
+    with open("data.csv", mode="a", newline="") as file:
+        writer = csv.writer(file)
+        total_bill = Extra_services() + Pyments()
+        writer.writerow([total_bill])
+    return total_bill
+
