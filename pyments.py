@@ -15,7 +15,8 @@ def discount():
 
 
 def Extra_services():
-    pass
+    other_misc = 1000
+    return other_misc + discount()
 
 def finall_bill():
-    pass
+    return Extra_services()
