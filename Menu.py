@@ -50,6 +50,8 @@ def show_dashboard(username):
             print(customer_management.processing())
             userData = customer_management.save_user_data()
             print("Profile Update Successfully...")
+            print("Everything is updated! ")
+            break
 
 
         # elif choice == 3:
