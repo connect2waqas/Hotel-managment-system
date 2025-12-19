@@ -24,10 +24,14 @@ real-world concepts like authentication, booking, and payments.
 
 ## Project Structure
 hotel_project/
-├── auth_json.py
-├── general.py
 ├── greet.py
+├── auth_json.py
+├── Check-in
+├── Menu.py
+├── main.py
+├── general.py
 ├── users.json
+├── pyments.py
 └── README.md
 
 ## How to Run
