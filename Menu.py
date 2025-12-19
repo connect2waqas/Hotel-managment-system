@@ -49,9 +49,15 @@ def show_dashboard(username):
             print("Check-in module opened...")
             print(customer_management.processing())
             userData = customer_management.save_user_data()
+            delete_data = input("Did you want to delete your data: ").lower()
+            if delete_data == "yes":
+                    customer_management.delete_customer_data()
+            else:
+                print("Thank You")
             print("Profile Update Successfully...")
-            print("Everything is updated! ")
+
             break
+
 
 
         # elif choice == 3:
