@@ -4,9 +4,17 @@ A beginner-friendly Python CLI project that demonstrates
 real-world concepts like authentication, booking, and payments.
 
 ## Features
+- Welcome
+- Menu
+- Food Menu
 - User registration and login
+- User Authentication 
+- Storing Data to json
+- Staff Managment
+- Customer Managment
+- Check-in
 - Room booking
-- Check-in / Check-out
+- Check-out
 - Payments
 
 ## Tech Stack
