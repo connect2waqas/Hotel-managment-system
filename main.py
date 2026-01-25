@@ -28,7 +28,7 @@ def main():
             if ok:
                 Menu.show_dashboard(u)  # <-- CALL GENERAL.PY
         elif cmd == "exit":
-            print("Thank You sir")
+            print("Thank-You-sir")
             
             break
 

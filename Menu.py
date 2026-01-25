@@ -8,12 +8,13 @@ def show_dashboard(username):
 1) Room booking
 2) Check-in
 3) Check-out
-4) Payments
-5) Customer management
-6) Room management
-7) Staff management
-8) Reports
+4) order_food
+5) Payments
+6) Customer management
+7) Room management
+8) Staff management
 9) Logout
+10) Reports
 """)
 
         choice = input("Select from the Menu: ").strip()
@@ -27,6 +28,8 @@ def show_dashboard(username):
 
         elif choice == "2":
             return control.checking()
+        elif choice == "4":
+            control.food()
         
         # elif choice == 3:
 
