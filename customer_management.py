@@ -1,9 +1,12 @@
 import json
 import os
 
+# Simple status message to show processing is happening
 def processing():
     return f"Processing..."
 
+# Fetches all customer data from the JSON file
+# Returns empty list if file doesn't exist or has issues
 def fetch_data():
     file_path = "user_data.json"
 
@@ -19,6 +22,8 @@ def fetch_data():
     except json.JSONDecodeError:
         return []
 
+# Collects customer info and saves it to JSON
+# Updates existing user if ID matches, otherwise creates new entry
 def save_user_data():
     full_name = input("Enter your name: ").lower().strip()
     occupation = input("Enter your occupation: ").lower().strip()
@@ -58,8 +63,10 @@ def save_user_data():
     with open("user_data.json", "w") as f:
         json.dump(users, f, indent=4)
 
-    return 
+    return
 
+# Removes a customer's data based on their ID
+# Filters out the matching ID and saves the updated list
 def delete_customer_data():
     users = fetch_data()
     ID = int(input("Enter user ID to delete: "))
@@ -73,6 +80,8 @@ def delete_customer_data():
             json.dump(updated_users, f, indent=4)
         print("✅ User deleted successfully.")
 
+# Searches for a specific customer by their ID
+# Displays their info if found, otherwise shows error message
 def search_customer():
     ID = int(input("Enter ID of customer: "))
     users = fetch_data()

@@ -1,5 +1,7 @@
+# Simple greeting message for the room booking section
 def Greet_To_room():
     return f"Welcome to Room Booking:"
+
 # def check_room_aviable():
 #     if main.number_Of_register_user != 5:
 #         print("Rooms avialable: ")
@@ -8,6 +10,9 @@ def Greet_To_room():
         
     # else:
     #     print("Rooms not aivalable")
+
+# Returns info about all available room types
+# Each room type has details like beds, bathrooms, and price per night
 def Room_info():
     single_setter = {"number_of_rooms":5,"bed": "1 Bed", "bathroom": "1 bathroom", "type": "Single bed", "payment": [{"Price": 5000}]}
     Double_setter = {"number_of_rooms":5,"bed": "2 Bed", "bathroom": "2 bathroom", "type": "Double beds", "payment": [{"Price": 10000}]}
@@ -16,6 +21,9 @@ def Room_info():
     global total_room_info
     total_room_info = [single_setter,Double_setter,Three_setter, Family_Halls]
     return total_room_info
+
+# Shows room options to customer and gets their choice
+# Returns a number between 1-4 based on what they select
 def Room_selection():
     print("What type of room do you want!: ")
     print("""
@@ -25,7 +33,9 @@ def Room_selection():
           4) Family Halls
           """)
     return  int(input("Enter options (1-4): "))
-    
+
+# Main function that processes the room booking
+# Gets room choice, duration, quantity and calculates total price
 def DeliverRoom():
     rooms = Room_info()
     choice = Room_selection() - 1      
@@ -43,5 +53,7 @@ def DeliverRoom():
     # print(f"Total bill: {final_price}")
 
     return final_price
+
+# Returns a success message after room is booked
 def Room_confirmation():
     return f"Room booked successfully"

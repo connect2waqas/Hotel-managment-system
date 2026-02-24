@@ -1,4 +1,7 @@
 import control
+
+# Shows the main dashboard after successful login
+# Handles all menu options like booking, check-in, food orders etc.
 def show_dashboard(username):
     print(f"\nWelcome, {username}! You are logged in.")
 

@@ -3,6 +3,8 @@ import Menu
 import greet
 number_Of_register_user = 0
 
+# Main entry point for the hotel management system
+# Handles user registration, login and redirects to the dashboard
 def main():
     greet.welcome()
 

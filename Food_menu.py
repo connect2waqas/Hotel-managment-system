@@ -1,6 +1,9 @@
 import csv
+
+# Displays the food menu and handles customer orders
+# Calculates total price and saves orders to CSV file
 def menu():
-    # here we are creating a function which well have food and there collection:
+    # Pakistani food items with their prices in PKR
     pakistani_food_prices = {
     "Chicken Biryani": 400,         
     "Beef Nihari": 650,             
