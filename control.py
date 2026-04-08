@@ -2,9 +2,8 @@ from Room_booking import  Greet_To_room, Room_confirmation
 import payments
 import customer_management
 from Food_menu import menu
-
 # Main booking flow - handles room booking and payment processing
-# Collects customer data and confirms when payment threshold is met
+# Collects customer data and confirms when the payment threshold is met
 def booking():
     print("Room booking module opened...")
     print(Greet_To_room())
@@ -21,13 +20,11 @@ def booking():
             customer_management.delete_customer_data()
         else:
             print("Thank You")
-
     else:
         print("Something went wrong!")
     return current
-
 # Handles customer check-in process
-# Updates customer information and gives option to delete data after check-in
+# Updates customer information and gives the option to delete data after check-in
 def checking():
     print("Check-in module opened...")
     print(customer_management.processing())
@@ -38,9 +35,7 @@ def checking():
     else:
         print("Thank You")
         print("Profile Update Successfully...")
-
     return 1
-
 # Opens the food ordering menu for customers
 # Processes customer data before showing menu options
 def food():
