@@ -1,10 +1,8 @@
 import control
-
 # Shows the main dashboard after successful login
-# Handles all menu options like booking, check-in, food orders etc.
+# Handles all menu options like booking, check-in, food orders, etc.
 def show_dashboard(username):
     print(f"\nWelcome, {username}! You are logged in.")
-
     while True:
         print("""
 ======== HOTEL MANAGEMENT DASHBOARD ========
@@ -19,24 +17,17 @@ def show_dashboard(username):
 9) Logout
 10) Reports
 """)
-
         choice = input("Select from the Menu: ").strip()
-
         if choice == "9":
             print("Logged out.")
             break
-
         elif choice == "1":
              print(control.booking())
-
         elif choice == "2":
             return control.checking()
         elif choice == "4":
             control.food()
-        
         # elif choice == 3:
-
         # add more later…\\\
-
         else:
             print("Invalid option. Try again.")
