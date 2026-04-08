@@ -1,5 +1,4 @@
 import csv
-
 # Displays the food menu and handles customer orders
 # Calculates total price and saves orders to CSV file
 def menu():
@@ -23,13 +22,9 @@ def menu():
 }  
     for food , price in pakistani_food_prices.items():
         print(f"{food} :: {price}")
-    
-
     with open("data.csv",mode="a",newline="") as file:
         writer = csv.writer(file)
-    
     total_1 = 0
-
     while True:
         choice = input("which you will order or want to exit: ").title()
         if choice.lower() == "exit":
@@ -51,6 +46,3 @@ def menu():
         else:
             print(f"Sorry {choice} is not avialable Yet")
             print("Available items:", ", ".join(pakistani_food_prices.keys()))
-
-        
-
