@@ -2,15 +2,12 @@ import auth_json
 import Menu
 import greet
 number_Of_register_user = 0
-
 # Main entry point for the hotel management system
-# Handles user registration, login and redirects to the dashboard
+# Handles user registration, login, and redirects to the dashboard
 def main():
     greet.welcome()
-
     while True:
         cmd = input("Do you want to register, login, or exit? ").strip().lower()
-
         if cmd == "register":
             u = input("Enter username: ")
             p = input("Enter password: ")
@@ -21,21 +18,15 @@ def main():
         elif cmd == "login":
             u = input("Enter username: ")
             p = input("Enter password: ")
-
             ok, msg = auth_json.authenticate(u, p)
             print(msg)
-            
             number_Of_register_user +=1
-            
             if ok:
                 Menu.show_dashboard(u)  # <-- CALL GENERAL.PY
         elif cmd == "exit":
             print("Thank-You-sir")
-            
             break
-
         else:
             print("Invalid choice. Try again.")
-
 if __name__ == "__main__":
     main()
